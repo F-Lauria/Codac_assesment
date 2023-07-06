@@ -5,6 +5,7 @@ from pyspark.sql import SparkSession, DataFrame
 from src.spark_codac.df_class import DataFrameRepresent
 
 
+
 @fixture
 def fixture_source_df(spark_session: SparkSession) -> DataFrame:
     df_data = [tuple('val' + str(i) + str(j) for i in range(6)) for j in range(5)]
